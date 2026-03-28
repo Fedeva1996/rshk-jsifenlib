@@ -117,10 +117,10 @@ sifen.ambiente=DEV
 # Este valor en el 99.99% de las veces va a ser true
 # a menos que uno sepa bien lo que está haciendo
 sifen.certificado_cliente.usar=true
-# Por ahora, el único valor aceptado es PFX
+# Por ahora, los valores aceptados son PFX y P12
 sifen.certificado_cliente.tipo=PFX
 
-## RUTA APUNTANDO AL ARCHIVO PFX
+## RUTA APUNTANDO AL ARCHIVO PFX o P12
 sifen.certificado_cliente.archivo=/home/charly/garcia.pfx
 
 ## PASSWORD del ARCHIVO PFX

@@ -400,7 +400,7 @@ public class Sifen {
                 throw SifenExceptionUtil.invalidConfiguration("Error en la configuración de Sifen: Tipo de certificado digital no establecido.");
             }
 
-            if (sifenConfig.getTipoCertificadoCliente().equals(SifenConfig.TipoCertificadoCliente.PFX)) {
+            if (sifenConfig.getTipoCertificadoCliente().equals(SifenConfig.TipoCertificadoCliente.PFX) || sifenConfig.getTipoCertificadoCliente().equals(SifenConfig.TipoCertificadoCliente.P12)) {
                 if (SifenUtil.isBlank(sifenConfig.getContrasenaCertificadoCliente())) {
                     throw SifenExceptionUtil.invalidConfiguration("Error en la configuración de Sifen: Contraseña del certificado digital no establecida.");
                 }

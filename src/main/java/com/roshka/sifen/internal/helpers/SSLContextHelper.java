@@ -99,7 +99,7 @@ public class SSLContextHelper {
 
     private static boolean isCertificateConfigurationValid(SifenConfig sifenConfig) {
         if (sifenConfig.isUsarCertificadoCliente()) {
-            if (sifenConfig.getTipoCertificadoCliente() == SifenConfig.TipoCertificadoCliente.PFX) {
+            if (sifenConfig.getTipoCertificadoCliente() == SifenConfig.TipoCertificadoCliente.PFX || sifenConfig.getTipoCertificadoCliente() == SifenConfig.TipoCertificadoCliente.P12) {
                 if (sifenConfig.getCertificadoCliente() == null || sifenConfig.getContrasenaCertificadoCliente() == null) {
                     logger.warning("Configuración del certificado no establecida.");
                     return false;

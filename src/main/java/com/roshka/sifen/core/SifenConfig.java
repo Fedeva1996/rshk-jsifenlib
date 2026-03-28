@@ -42,7 +42,7 @@ public class SifenConfig {
     /**
      * Enum con los tipos de certificados disponibles para la conexión segura y la firma digital.
      */
-    public enum TipoCertificadoCliente {PFX} // Implementar PEM y DER
+    public enum TipoCertificadoCliente {PFX, P12} // Implementar PEM y DER
 
     /**
      * Enum con los tipos de ambientes disponibles en Sifen.
